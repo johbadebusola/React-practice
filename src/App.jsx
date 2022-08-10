@@ -1,17 +1,21 @@
 import * as React from 'react';
 import './App.css';
+import styles from './style.module.css'
 import Test from './class'
 import List from './List'
 import Binding from './eventBinding'
 import Even from './EvenNumbers'
+import Form from '.Form';
 function App() {
   return (
-    <div className="App">
-     <Test name="Jerry"/>
-      <Test name="John"/>
-<Binding />
-		<List />
-		<Even />
+    <div>
+			  <Test /> 
+			{/*<Binding /> */}
+			{/* <Even /> */}
+			<p className={styles.success}> 
+			HELLO WORLD
+			</p>
+			<form />
     </div>
 
     
